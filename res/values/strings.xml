@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Input -->
+	<string name="app_name">Gesturin</string>
+	<string name="upper_off">Upper</string>
+	<string name="lower_off">Lower</string>
+	<string name="upper_on">UPPER</string>
+	<string name="lower_on">lower</string>
+	<string name="caps">Caps</string>
+	
+	<!-- Preferences -->
+	<string name="button_discard">Discard</string>
+	<string name="button_done">Done</string>
+	<string name="gesture_name">Name</string>
+	<string name="gestures_rename_label">Gesture name</string>
+	<string name="button_add">Add</string>
+	<string name="button_reload">Reload</string>
+	<string name="gestures_loading">Gestures loading</string>
+	<string name="gestures_empty">Gestures empty</string>
+	<string name="gestures_rename">Rename</string>
+	<string name="gestures_delete">Delete</string>
+	<string name="gestures_rename_title">Gestures rename</string>
+	<string name="cancel_action">Cancel</string>
+	<string name="rename_action">Rename</string>
+	<string name="gestures_delete_success">Gestures delete success</string>
+	<string name="gestures_error_loading">Gestures error loading</string>
+	<string name="error_missing_name">Missing name</string>
+	<string name="save_success">Save success</string>
+	<string name="label_create_gesture">Create gesture</string>
+</resources>

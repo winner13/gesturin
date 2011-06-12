@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="250dip"
+	android:layout_alignParentBottom="true">
+	
+	<android.gesture.GestureOverlayView
+		android:id="@+id/gestures"
+		android:layout_width="fill_parent" 
+		android:layout_height="250dip">
+		<RelativeLayout 
+			android:id="@+id/relativeLayout1" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:background="@drawable/gesture_bg">
+			<Button 
+				android:text="Lang" 
+				android:id="@+id/lang" 
+				android:textColor="#FFF"
+				android:layout_height="50dip" 
+				android:onClick="onLangClick" 
+				android:background="@drawable/background_button"
+				android:layout_width="80dip"/>
+			<ToggleButton 
+				android:textOn ="@string/upper_on" 
+				android:textOff="@string/upper_off" 
+				android:id="@+id/upper" 
+				android:layout_width="80dip" 
+				android:layout_height="50dip"
+				android:textColor="#FFF"
+				android:background="@drawable/background_toggle_button"
+				android:layout_marginTop="50dip"/>
+			<ToggleButton 
+				android:textOn ="@string/caps" 
+				android:textOff="@string/caps" 
+				android:id="@+id/caps" 
+				android:layout_height="50dip" 
+				android:layout_width="80dip" 
+				android:textColor="#FFF"
+				android:background="@drawable/background_toggle_button"
+				android:layout_marginTop="100dip"/>
+			<ToggleButton 
+				android:textOn= "@string/lower_on" 
+				android:textOff="@string/lower_off" 
+				android:id="@+id/lower" 
+				android:layout_width="80dip" 
+				android:layout_height="50dip"
+				android:textColor="#FFF"
+				android:background="@drawable/background_toggle_button"
+				android:layout_marginTop="150dip"/>
+			<Button 
+				android:text="" 
+				android:id="@+id/preferences" 
+				android:layout_marginTop="200dip" 
+				android:layout_width="80dip" 
+				android:layout_height="50dip"
+				android:background="@drawable/background_button"
+				android:drawableRight="@android:drawable/ic_menu_preferences"/>
+		</RelativeLayout>
+	</android.gesture.GestureOverlayView>
+</LinearLayout>
