@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="pen.gesture.input"
+	android:versionCode="1"
+	android:versionName="1.0">
+	
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="9"/>
+	
+	<application 
+		android:icon="@drawable/icon" 
+		android:label="@string/app_name">
+		
+		<service 
+			android:name="GestureKeyboard"
+			android:permission="android.permission.BIND_INPUT_METHOD">
+			<intent-filter>
+				<action android:name="android.view.InputMethod"/>
+			</intent-filter>
+			<meta-data android:name="android.view.im" android:resource="@xml/method"/>
+		</service>
+		
+		<activity
+			android:name="GesturesListActivity"
+			android:label="@string/app_name"
+			android:icon="@drawable/icon" 
+			android:configChanges="keyboard|keyboardHidden|orientation">
+		</activity>
+		
+		<activity
+			android:name="GestureBuilderActivity"
+			android:label="@string/app_name"
+			android:icon="@drawable/icon"
+			android:configChanges="keyboard|keyboardHidden|orientation"/>
+		
+		<activity
+			android:name="CreateGestureActivity"
+			android:label="@string/label_create_gesture"
+			android:configChanges="keyboard|keyboardHidden|orientation"/>
+		
+	</application>
+</manifest>
